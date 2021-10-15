@@ -31,7 +31,7 @@ pip install pygitinterface
 
 ## Example
 ```
-from git_interface import GitInterface
+from pygitinterface import GitInterface
 
 g = GitInterface('C:/your_local_repository_path')
 g.commit('Bug fixes')
