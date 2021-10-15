@@ -34,7 +34,7 @@ class GitInterface:
         self._create_process(['git', 'commit', '-m', f'{message}'])
 
     def rebase(self):
-        pass
+        raise NotImplementedError
 
     def branch(self, src_branch_name, dst_branch_name):
         src_branch_name = str(src_branch_name)
