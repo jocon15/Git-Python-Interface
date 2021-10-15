@@ -17,12 +17,12 @@ To use this module, you should have the git bash downloaded and a repository set
 |---             |---                           |
 |add			 |add files to staging area	|
 |branch			 |create a branch of the repository|
+|checkout		 |checkout a branch|
 |commit			 |commit changes to local repository|
 |pull            |pull updates from remote repository|
 |push            |send updates to remote repository |
+|rebase			 |rebase branch with anotherbranch|
 |status 		 |get the status of the local repository|
-
-
 
 ## Example
 ```
