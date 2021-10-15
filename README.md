@@ -6,6 +6,11 @@ With GitInterface, you can save yourself from having to repetitively type in git
 
 To use this module, you should have the git bash downloaded and a repository setup and ready to be automated. Now you can just import the class and git started.
 
+## Install
+```
+pip install pygitinterface
+```
+
 ## Contents
 |File            |Description                   |
 |---             |---                           |
