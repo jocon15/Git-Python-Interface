@@ -11,7 +11,7 @@ Welcome to the git repository for the Python-Git Interface. The GitInterface cla
 ```
 from git_interface import GitInterface
 
-g = GitInterface('repo_cite_name', 'C:/Users/repository_path')
-g.commit('hello world')
+g = GitInterface('github', 'C:/Users/repository_path')
+g.commit('Bug fixes')
 g.push('master')
 ```

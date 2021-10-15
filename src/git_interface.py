@@ -3,7 +3,7 @@ import subprocess
 
 class GitInterface:
 
-    def __init__(self, repo_cite, cwd):
+    def __init__(self, cwd, repo_cite='github'):
         self.repo_cite = repo_cite
         self.cwd = cwd
 
