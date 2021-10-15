@@ -1,3 +1,7 @@
+"""
+This file is part of Git-Python-Interface which is released under the MIT License.
+See file LICENSE.txt or go to https://github.com/jocon15/Git-Python-Interface/blob/master/LICENSE for full license details.
+"""
 import subprocess
 
 
