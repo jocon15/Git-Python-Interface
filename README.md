@@ -16,12 +16,12 @@ To use this module, you should have the git bash downloaded and a repository set
 |Comamnd         |Description                   |
 |---             |---                           |
 |add			 |add files to staging area	|
-|branch			 |create a branch of the repository|
+|branch			 |create a branch of current branch|
 |checkout		 |checkout a branch|
 |commit			 |commit changes to local repository|
 |pull            |pull updates from remote repository|
 |push            |send updates to remote repository |
-|rebase			 |rebase branch with anotherbranch|
+|rebase			 |rebase branch with another branch|
 |status 		 |get the status of the local repository|
 
 ## Example
