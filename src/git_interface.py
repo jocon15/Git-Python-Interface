@@ -13,10 +13,10 @@ class GitInterface:
 
     def add(self, tag='-A'):
         # can be file or a switch
-        if tag == '-A':
-            self._create_process(['git', 'add', tag])
-        else:
-            raise NotImplementedError
+        tag = str(tag)
+        if not tag:
+            raise Exception('Please enter a file name or a switch')
+        self._create_process(['git', 'add', tag])
 
     def branch(self, src_branch_name, dst_branch_name):
         src_branch_name = str(src_branch_name)
@@ -38,15 +38,15 @@ class GitInterface:
         message = str(message)
         self._create_process(['git', 'commit', '-m', f'{message}'])
 
-    def pull(self, branch):
-        if not branch:
-            self._create_process(['git', 'pull', self.repo_cite, branch])
+    def pull(self, branch_name):
+        if not branch_name:
+            self._create_process(['git', 'pull', self.repo_cite, branch_name])
         else:
             self._create_process(['git', 'pull'])
 
-    def push(self, branch):
-        if branch:
-            self._create_process(['git', 'push', self.repo_cite, branch])
+    def push(self, branch_name):
+        if branch_name:
+            self._create_process(['git', 'push', self.repo_cite, branch_name])
         else:
             self._create_process(['git', 'push'])
 
