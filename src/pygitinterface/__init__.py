@@ -1,1 +1,1 @@
-from git_interface import GitInterface
+from pygitinterface.git_interface import GitInterface
