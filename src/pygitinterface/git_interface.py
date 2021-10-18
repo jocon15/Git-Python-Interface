@@ -39,7 +39,7 @@ class GitInterface:
         self._create_process(['git', 'commit', '-m', f'{message}'])
 
     def pull(self, branch_name):
-        if not branch_name:
+        if branch_name:
             self._create_process(['git', 'pull', self.repo_cite, branch_name])
         else:
             self._create_process(['git', 'pull'])
