@@ -3,3 +3,4 @@
 /pygitinterface.egg-info
 /pycache
 /__pycache__
+*.bat
