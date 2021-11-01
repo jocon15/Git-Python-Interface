@@ -55,7 +55,6 @@ class GitInterface:
         if not rebase_branch_name:
             raise Exception('Please enter a branch name')
         self._create_process(['git', 'rebase', rebase_branch_name])
-        raise NotImplementedError
 
     def status(self):
         self._create_process(['git', 'status'])

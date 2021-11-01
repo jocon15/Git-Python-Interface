@@ -2,3 +2,4 @@
 /dist
 /pygitinterface.egg-info
 /pycache
+/__pycache__
