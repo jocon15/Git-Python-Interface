@@ -70,13 +70,11 @@ class GitInterface:
 
     def _create_bat(self, args):
         """Create subbat from args"""
-        if type(args) != list:
-            raise Exception('Args must be a list.')
         if not args:
             raise Exception('No args passed.')
         lines = []
-        lines.append(f'cd {self.cwd}')
-        lines.append(f'{args}')
+        lines.append(f'cd {self.cwd}\n')
+        lines.append(f'call {args}')
         with open('commands.bat', 'w+') as file:
             file.writelines(lines)
 
